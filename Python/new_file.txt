@@ -1,0 +1,1 @@
+{'name': 'haneen', 'id': 123, 'salary': 60000, 'is_mngr': True}[{'name': 'haneen', 'id': 123, 'salary': 60000, 'is_mngr': True}, {'name': 'hany', 'id': 124, 'salary': 60000, 'is_mngr': False}][{'name': 'haneen', 'id': 123, 'salary': 60000, 'is_mngr': True}, {'name': 'hany', 'id': 124, 'salary': 60000, 'is_mngr': False}]
