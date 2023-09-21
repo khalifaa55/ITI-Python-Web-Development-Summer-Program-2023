@@ -3,6 +3,6 @@
 ### Languages and Technologies used: 
 * Python
 * HTML
-* Css
+* CSS
 * Django
 * PostgresSQL
