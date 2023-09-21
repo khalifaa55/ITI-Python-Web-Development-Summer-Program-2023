@@ -1,0 +1,31 @@
+{% extends 'books_management/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">Books</h1>
+        <table border="1" width="100%" class="table">
+            <tr><th>ISBN</th><th>Name</th><th>PublishDate</th><th>PublishHouse</th><th>Image</th><th colspan="2">Actions</th></tr>
+        {% for b in books %}
+        <tr>
+        <td>{{b.isbn}}</td>
+        <td>{{b.name}}</td>
+        <td>{{b.publish_date}}</td>
+        <td>{{b.publishing_house}}</td>
+        <td>
+            {% if b.image %}
+                <img src="{{b.image.url}}" alt="Book Image" width="100">
+            {% else %}
+                No Image Available
+            {% endif %}
+        </td>
+        <td><a href="edit_book/{{b.isbn}}">Edit</a></td>
+        <td><a href="delete_book/{{b.isbn}}">Delete</a></td>
+        </tr>
+        {% endfor %}
+        </table>
+        <a class="btn btn-primary" href="{% url 'add_book' %}">Add Book</a>
+        
+    </div>
+</div>
+{% endblock %}
